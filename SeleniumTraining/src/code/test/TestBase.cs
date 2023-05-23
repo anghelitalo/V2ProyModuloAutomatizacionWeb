@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace SeleniumTraining.src.code.test
 {
     [TestClass]
-    public class TestBase
+    public abstract class TestBase
     {
         [TestInitialize]
         public void OpenBrowser()

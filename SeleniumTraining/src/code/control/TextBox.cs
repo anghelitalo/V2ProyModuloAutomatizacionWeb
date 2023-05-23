@@ -13,12 +13,11 @@ namespace SeleniumTraining.src.code.control
         {
         }
 
-        public void SetText(String value) 
+        public void SetText(string value) 
         {
             FindControl();
             control.Clear();
             control.SendKeys(value);
         }
-
     }
 }

@@ -2,6 +2,7 @@
 using SeleniumTraining.src.code.session;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,6 +39,18 @@ namespace SeleniumTraining.src.code.control
             }catch (Exception ex)
             {
                 return false;
+            }
+        }
+
+        public String getText() {
+            try
+            {
+                FindControl();
+                return control.Text.ToString();
+            }
+            catch (Exception ex)
+            {
+                return ex.ToString();
             }
         }
     }
